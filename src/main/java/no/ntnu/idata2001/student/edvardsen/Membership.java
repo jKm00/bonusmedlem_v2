@@ -1,20 +1,13 @@
 package no.ntnu.idata2001.student.edvardsen;
 
-public class Member
+public class Membership
 {
-    private String name;
-    private int age;
 
     /**
      * Creates an object of member
-     *
-     * @param name, name of the member
-     * @param age, age of the member
      */
-    public Member(String name, int age)
+    public Membership()
     {
-        this.name = name;
-        this.age = age;
     }
 
     /**

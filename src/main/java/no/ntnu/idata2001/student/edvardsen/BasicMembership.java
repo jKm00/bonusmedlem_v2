@@ -1,16 +1,13 @@
 package no.ntnu.idata2001.student.edvardsen;
 
-public class BasicMembership extends Member
+public class BasicMembership extends Membership
 {
     /**
      * Creates an object of BasicMembership
-     *
-     * @param name, name of the member
-     * @param age, age of the member
      */
-    public BasicMembership(String name, int age)
+    public BasicMembership()
     {
-        super(name, age);
+        super();
     }
 
     @Override

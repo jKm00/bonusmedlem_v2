@@ -2,20 +2,17 @@ package no.ntnu.idata2001.student.edvardsen;
 
 import java.lang.Math;
 
-public class GoldMembership
+public class GoldMembership extends Membership
 {
     private final float POINTS_SCALING_FACTOR_LEVEL_1 = 1.3f;
     private final float POINTS_SCALING_FACTOR_LEVEL_2 = 1.5f;
 
     /**
      * Creates an object of GoldMembership
-     *
-     * @param name, name of the member
-     * @param age, age of the member
      */
-    public GoldMembership(String name, int age)
+    public GoldMembership()
     {
-        super(name, age);
+        super();
     }
 
     @Override
@@ -36,7 +33,7 @@ public class GoldMembership
     }
 
     @Override
-    public String getMembership()
+    public String getMembershipName()
     {
         return "Gold";
     }

@@ -2,19 +2,16 @@ package no.ntnu.idata2001.student.edvardsen;
 
 import java.lang.Math;
 
-public class SilverMembership extends Member
+public class SilverMembership extends Membership
 {
     private final float POINTS_SCALING_FACTOR = 1.2f;
 
     /**
      * Creates an object of membership
-     *
-     * @param name, name of the member
-     * @param age, age of the member
      */
-    public SilverMembership(String name, int age)
+    public SilverMembership()
     {
-        super(name, age);
+        super();
     }
 
     @Override

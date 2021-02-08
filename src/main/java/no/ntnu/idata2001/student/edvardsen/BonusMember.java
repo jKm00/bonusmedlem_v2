@@ -144,11 +144,12 @@ public class BonusMember
      */
     public void checkAndSetMembership(int bonusPointBalance)
     {
-        if (bonusPointBalance > SILVER_LIMIT && bonusPointBalance < GOLD_Limit)
+        this.bonusPointsBalance = bonusPointBalance;
+        if (bonusPointBalance >= SILVER_LIMIT && bonusPointBalance < GOLD_Limit)
         {
             this.membership = new SilverMembership();
         }
-        else if (bonusPointBalance > GOLD_Limit)
+        else if (bonusPointBalance >= GOLD_Limit)
         {
             this.membership = new GoldMembership();
         }

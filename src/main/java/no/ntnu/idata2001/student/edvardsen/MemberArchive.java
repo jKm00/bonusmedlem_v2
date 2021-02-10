@@ -105,6 +105,10 @@ public class MemberArchive
         }
         else
         {
+            System.out.printf("%-20s %-15s %-20s %-20s %-20s%n",
+                    "Membership number", "Name", "Email", "Bonus point", "Membership");
+            System.out.println("-----------------------------------------"
+                    + "--------------------------------------------------");
             for (BonusMember member : this.members.values())
             {
                 this.printMemberDetail(member);
@@ -119,12 +123,8 @@ public class MemberArchive
      */
     public void printMemberDetail(BonusMember member)
     {
-        System.out.println("Member number: " + member.getMemberNumber());
-        System.out.println("Name: " + member.getName());
-        System.out.println("Email: " + member.getEmailAdress());
-        System.out.println("Bonus points: " + member.getBonusPointBalance());
-        System.out.println("Membership: " + member.getMembershipName());
-        System.out.println();
+        System.out.printf("%-20d %-15s %-20s %-20d %-20s%n",
+                member.getMemberNumber(), member.getName(), member.getEmailAdress(), member.getBonusPointBalance(), member.getMembershipName());
     }
 
     /**

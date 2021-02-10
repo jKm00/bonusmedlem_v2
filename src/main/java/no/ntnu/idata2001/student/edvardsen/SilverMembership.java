@@ -6,14 +6,6 @@ public class SilverMembership extends Membership
 {
     private final float POINTS_SCALING_FACTOR = 1.2f;
 
-    /**
-     * Creates an object of membership
-     */
-    public SilverMembership()
-    {
-        super();
-    }
-
     @Override
     public int registerPoints(int bonusPointBalance, int newPoints)
     {

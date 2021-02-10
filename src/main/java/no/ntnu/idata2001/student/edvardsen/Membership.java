@@ -1,6 +1,6 @@
 package no.ntnu.idata2001.student.edvardsen;
 
-public class Membership
+public abstract class Membership
 {
 
     /**
@@ -17,18 +17,12 @@ public class Membership
      * @param newPoints, points to be added
      * @return newBonusPointBalance, the new bonus point balance for the customer after calculating with their respective membership
      */
-    public int registerPoints(int bonusPointBalance, int newPoints)
-    {
-        return 0;
-    }
+    public abstract int registerPoints(int bonusPointBalance, int newPoints);
 
     /**
      * Returns the name of the memberhship as a string, or "error" if something went wrong
      *
      * @return membership name, name of the membership
      */
-    public String getMembershipName()
-    {
-        return "error";
-    }
+    public abstract String getMembershipName();
 }

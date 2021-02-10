@@ -2,14 +2,6 @@ package no.ntnu.idata2001.student.edvardsen;
 
 public class BasicMembership extends Membership
 {
-    /**
-     * Creates an object of BasicMembership
-     */
-    public BasicMembership()
-    {
-        super();
-    }
-
     @Override
     public int registerPoints(int bonusPointBalance, int newPoints)
     {

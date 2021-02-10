@@ -132,9 +132,9 @@ public class BonusMember
      */
     public void registerBonusPoint(int newPoints)
     {
-        int newBounsPointBalance = this.membership.registerPoints(this.bonusPointsBalance, newPoints);
+        this.bonusPointsBalance = this.membership.registerPoints(this.bonusPointsBalance, newPoints);
 
-        this.checkAndSetMembership(newBounsPointBalance);
+        this.checkAndSetMembership(this.bonusPointsBalance);
     }
 
     /**
@@ -144,7 +144,6 @@ public class BonusMember
      */
     public void checkAndSetMembership(int bonusPointBalance)
     {
-        this.bonusPointsBalance = bonusPointBalance;
         if (bonusPointBalance >= SILVER_LIMIT && bonusPointBalance < GOLD_Limit)
         {
             this.membership = new SilverMembership();

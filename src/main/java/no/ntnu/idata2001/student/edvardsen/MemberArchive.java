@@ -34,10 +34,13 @@ public class MemberArchive
     {
         int memberNumber = 0;
 
-        if (this.members.get(this.members.size()) == null)
+        if (this.members.get(bonusMember.getMemberNumber()) == null) // check if user already is added
         {
-            memberNumber = this.members.size();
-            this.members.put(memberNumber, bonusMember);
+            if (this.members.get(this.members.size()) == null) // check if last item plus 1 is available
+            {
+                memberNumber = this.members.size(); // sets memberNumber to last member plus 1
+                this.members.put(memberNumber, bonusMember);
+            }
         }
 
         return memberNumber;
